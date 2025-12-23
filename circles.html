@@ -94,11 +94,13 @@ window.createCircle = async function () {
 
     circles[name] = [];
 
-    await updateDoc(userRef, { circles });
+    await setDoc(userRef, { circles }, { merge: true });
 
     currentUserDoc.circles = circles;
     renderCircles();
 };
+
+
 
 window.logout = function () {
     signOut(auth).then(() => {
