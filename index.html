@@ -1,19 +1,22 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Dec 21 15:33:23 2025
-
-@author: jamic
-"""
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Test Site</title>
+    <meta charset="utf-8">
+    <title>Circles — Sign In</title>
 </head>
 <body>
 
-<h1>It works</h1>
-<p>If you see this online, everything is set up correctly.</p>
+<h2>Sign in or Create Account</h2>
+
+<input id="email" placeholder="Email"><br><br>
+<input id="password" type="password" placeholder="Password"><br><br>
+
+<button onclick="login()">Sign In</button>
+<button onclick="signup()">Create Account</button>
+
+<p id="error"></p>
+
+<script type="module" src="auth.js"></script>
 
 </body>
 </html>
